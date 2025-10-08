@@ -11,6 +11,7 @@ testRouter.get('/', (req, res) => {
     });
 });
 
+// testing
 // POST /api/test
 testRouter.post('/', (req, res) => {
     const { data } = req.body;
