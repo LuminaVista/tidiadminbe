@@ -3,7 +3,7 @@ body {
   overflow-x: hidden;
 }
 .row {
-  height: 82vh;
+  height: auto !important;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -83,9 +83,25 @@ body {
 }
 
 #signUpDayCount {
-  font-weight: 600;
-  color: #198754;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  justify-content: center;
 }
+
+#signUpDayCount .count {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #198754; 
+  line-height: 1;
+}
+
+#signUpDayCount .label {
+  font-size: 1.9rem; 
+  font-weight: 500;
+  color: black;
+}
+
 .card {
   height: 62vh;
   min-height: unset !important;
@@ -103,3 +119,41 @@ body {
 .mb-3 {
   margin-bottom: 1rem !important;
 }
+
+
+.card.p-2 {
+  position: relative;
+  height: 22vh;      
+  overflow: hidden; 
+}
+
+.card.p-2 #signUpDayPicker {
+  position: absolute;
+  top: 10px;    
+  right: 12px;  
+  width: 150px; 
+  height: 34px;
+  z-index: 5;   
+}
+
+.card.p-2 h6 {
+  margin-right: 180px; 
+}
+
+
+.card.p-2 .d-flex {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.parent-container {
+  height:50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.col-md-7 {
+  height: auto !important;
+}
+
